@@ -1,0 +1,50 @@
+.col {
+    padding: 3vw;
+}
+.col2 {
+    padding: 1vw;
+}
+h1 {
+    font-size: xx-large;
+}
+
+body {
+    margin-top: 20vh;
+    background: url(radishback.png) 50% 1% no-repeat;
+    background-color: #E5FAEC;
+}
+
+.even-columns {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.even-columns > * {
+    flex: 1 1 100vw;
+    
+}
+
+button {
+    color: #FCF7F7;
+    background-color: #38982D;
+    border: none;
+    border-radius: 10%;
+    font-size: xx-large;
+    font-weight: 700;
+    z-index: 3;
+    cursor: url(carrot3.svg) 5 5, pointer;
+}
+#vote {
+    width: max( 180px, 24vw);
+    height: max(100px, 7vw);
+    
+}
+.submitemail {
+    width: max( 180px, 24vw);
+    height: max(100px, 7vw);
+}
+#email {
+    font-size: xx-large;
+}

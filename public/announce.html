@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {
+            'packages': ['corechart', 'bar']
+        });
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        //   function drawChart() {
+        function drawChart() {
+            // Create the data table.
+
+            var data = google.visualization.arrayToDataTable([
+                ['Candidates', 'votes', {
+                    role: 'style'
+                }],
+
+                ['Butter Water II', 5, 'color: red'],
+                ['Radish R. Washe', 0, 'color: blue'],
+                ['Lettuce Divign', 6, 'color: orange'],
+                ['Pumpkin Silkin', 6, 'color: yellow'],
+                ['Onion G. Leek', 2, 'color: black'],
+                ['Kale Kale', 7, 'color: green']
+            ]);
+
+            // Set chart options
+            /* var options = {'title':'Ambassador Current Voting Results',
+                 'width':1000,
+                 'height':400};
+ */
+            var options = {
+                enableInteractivity: 'false',
+                legend: 'none',
+                backgroundColor: 'transparent',
+                colors: ['gray'],
+                vAxis:{
+                    textPosition: 'none'
+                },
+                
+            };
+
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="45; url = https://voting-450bf.web.app/index.html" />
+    <title>Winner Announced Soon!</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.8.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.8.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.8.1/firebase-performance.js"></script>
+    <!-- 
+       initialize the SDK after all desired features are loaded, set useEmulator to false
+       to avoid connecting the SDK to running emulators.
+     -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="even-columns">
+        <div class="col">
+            <h1>ANNOUNCEMENT</h1>
+        </div>
+        <br>
+        <div class="col">
+            <h1>TUESDAY, AUGUST 10TH
+                AT 11:59PM (ET)</h1>
+        </div>
+        <!-- <div class="col"><img src="" alt=""></div> -->
+        <!-- <div id="chart_div"></div> -->
+        <h1>SIGN UP TO BE NOTIFIED OF THE WINNER</h1>
+        <form>
+            <input type="text" id="email" placeholder="youremail@email.com">
+        </form>
+        <button class="submitemail" id="submitform">Submit</button>
+    </div>
+    <script src="app3.js"></script>
+    <script src="appgraph.js"></script>
+
+
+</body>
+
+</html>

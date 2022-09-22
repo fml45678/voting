@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <!-- update the version number as needed -->
+     <script defer src="/__/firebase/8.8.1/firebase-app.js"></script>
+     <!-- include only the Firebase features as you need -->
+     <script defer src="/__/firebase/8.8.1/firebase-auth.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-database.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-firestore.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-functions.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-messaging.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-storage.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-remote-config.js"></script>
+     <script defer src="/__/firebase/8.8.1/firebase-performance.js"></script>
+     <!-- 
+       initialize the SDK after all desired features are loaded, set useEmulator to false
+       to avoid connecting the SDK to running emulators.
+     -->
+     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="even-columns">
+        <div class="col"><h1>REGISTRATION</h1></div>
+        <br>
+        <div class="col form">
+            <forßm>
+                <label for="consume">Did you consume any types of vegetable in the last 24 hours?</label><br>
+                <input type="text" name="consume" id="consume"><br>
+                <label for="consumes">Did you consume any seafood in the last 24 hours?</label><br>
+                <input type="text" name="consumes" id="consumes"><br>
+                <label for="citizen">Have you considered having dual or triple citizenships with the UVS if possible?</label><br>
+                <input type="text" name="citizen" id="citizen"><br>
+                <label for="possibility">Do you think the new ambassador of the United Vegetable States will introduce new cultures and open up new possibilities?
+                </label><br>
+                <input type="text" name="possibility" id="possibility"><br>
+                <label for="better">Have you imagined a better world, better society, and/or better future?</label><br>
+                <input type="text" name="better" id="better"><br>
+                <label for="believe">Do you believe in voting?</label><br>
+                <input type="text" name="believe" id="believe"><br>
+                <label for="favorite">Name your favorite vegetable</label><br>
+                <input type="text" name="favorite" id="favorite"><br>
+                <label for="date">Date</label><br>
+                <input type="date" name="date" id="date"><br><br>
+            </form>
+            <button id="submitform">submit</button>
+        </div>
+        <div class="col"><img src="" alt=""></div>
+        <script src="app2.js"></script>
+      </div>
+</body>
+</html>
